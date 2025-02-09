@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+}
+
+.app-container {
+  background-image: url("https://utfs.io/f/a492ea9b-1045-4c58-b0c2-05724124644b-1uv0oe.png"); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  font-family: "Misteri Caps", Misteria Caps; /* Use the custom font */
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  font weight:10;
+  margin-bottom: 10px; /* Reduce margin-bottom to move it up */
+  margin-top: -30px; /* Move the title upwards */
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 100px; /* Adjust spacing between the cards */
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Misteri Caps";
+  src: url("./Assets/Misteri Caps.ttf") format("truetype"); /* Update the path if needed */
+}
+
+body {
+  font-family: "EcstasiaFamily", sans-serif;
+}

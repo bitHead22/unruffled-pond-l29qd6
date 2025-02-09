@@ -1,0 +1,82 @@
+:root {
+  --mint-cream: #ebf5ee;
+  --khaki: #bfa89e;
+  --air-blue: #78a1bb;
+  --dark-blue: #283044;
+  --brown-grey: #89766c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+}
+
+.container {
+  height: 400px;
+  width: 250px;
+  perspective: 700px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card {
+  height: inherit;
+  width: inherit;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: 10px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  user-select: none;
+}
+
+.card-back {
+  background: url(https://media.hearthpwn.com/attachments/104/176/power-core.png)
+    no-repeat right bottom / contain;
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.card-front {
+  background: url(https://utfs.io/f/b8b5af60-0a43-4870-8cfe-398ff3951cff-1k7zfl.png)
+    no-repeat right bottom / cover;
+}
+
+.mouseovered {
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-align: center;
+  z-index: 1;
+}
+
+.card-text h2 {
+  color: var(--mint-cream);
+  font-family: "Times New Roman", serif; /* Elegant serif font */
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 1px;
+}
